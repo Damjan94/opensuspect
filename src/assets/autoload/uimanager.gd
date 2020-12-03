@@ -14,7 +14,8 @@ var menus: Dictionary = {
 						
 						#task UI
 						"clockset": {"scene": preload("res://assets/ui/tasks/clockset/clockset.tscn")},
-						"gasvalve": {"scene": preload("res://assets/ui/tasks/gasvalve/gasvalve.tscn")}
+						"gasvalve": {"scene": preload("res://assets/ui/tasks/gasvalve/gasvalve.tscn")},
+						"booleanalgebra": {"scene": preload("res://assets/ui/tasks/booleanalgebra/booleanalgebra.tscn")}
 						}
 
 var openMenus: Array = []

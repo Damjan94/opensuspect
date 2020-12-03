@@ -8,9 +8,20 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "BaseMaintenanceTask",
+"language": "GDScript",
+"path": "res://assets/common/classes/tasks-maitenance/base/base-task-maintenance.gd"
+}, {
+"base": "WindowDialog",
+"class": "BaseMaintenanceTaskGui",
+"language": "GDScript",
+"path": "res://assets/common/classes/tasks-maitenance/base/base-task-maintenance-gui.gd"
+} ]
 _global_script_class_icons={
-
+"BaseMaintenanceTask": "",
+"BaseMaintenanceTaskGui": ""
 }
 
 [application]
