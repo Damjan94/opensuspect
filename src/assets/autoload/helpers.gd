@@ -18,7 +18,13 @@ func string_join(string_array: Array, separator: String) -> String:
 func find_file(file_name: String, start_path: String = "res://", recursive: bool = true) -> String:
 	"""Find file 'file_name' starting at directory 'start_path' recursively."""
 	var directory := Directory.new()
-	assert(directory.open(start_path) == OK)
+	print("Looking for ", file_name, " in ", start_path)
+	var status = directory.open(start_path)
+	if status != OK:
+		print("Open status = ", status)
+		assert(status == OK)
+		return ""
+		
 	directory.list_dir_begin(true)
 	var file: String = directory.get_next()
 	while file != "":
